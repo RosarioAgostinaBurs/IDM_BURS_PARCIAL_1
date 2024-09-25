@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+main, header, nav, footer {
+    max-width: 1366px;
+    margin: auto;
+}
+
+header h1 {
+    display: none;
+}
+
+.contenedor-header {
+    background-image: url(../imagenes/logo.png);
+    background-color: #224c8cfc;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position-y: center;
+    background-position-x: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+body {
+    background-color: #f8ca58;
+    background: linear-gradient(52deg, rgb(252, 230, 174) 0%, rgba(248, 202, 88, 1) 100%);
+    padding-top: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    background-color: #004281;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004281;
+    margin-bottom: 0.7rem;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    text-transform: uppercase;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+h2, h3 {
+    font-family: "Graduate", serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+    padding-bottom: 0.7rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.imagen-tablet, .imagen-pc {
+    display: none;
+}
+
+.introduccion-txt, .historia-txt, .info-personaje, .intro-clips {
+    padding: 0 1rem;
+}
+
+.historia-txt span
+{
+    color: #f8ca58;
+    font-weight: 700;
+}
+
+.parrafo-1 {
+    padding-bottom: 1rem;
+}
+
+.imagenes-temporadas img:nth-child(2), .imagenes-temporadas img:nth-child(3) {
+    display: none;
+}
+
+.imagenes-temporadas img {
+    margin-top: 1rem;
+}
+
+.actor-personaje {
+    text-align: center;
+    background-color: #0456a5;
+    padding: 0.3rem 0;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    margin: 0.8rem 0;
+}
+
+.episodio 
+{
+    margin-bottom: 1.3rem;
+    background-color: #0456a5;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    padding: 0.8rem;
+}
+
+.info-episodio {
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #d3d3d3;
+}
+
+#episodios div:last-child {
+    margin-bottom: 0;
+}
+
+.videos iframe 
+{
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin-top: 1rem;
+}
+
+.video .txt-pc {
+    display: none;
+}
+
+.video p
+{
+    text-align: center;
+}
+
+#formulario .foto-sorteo {
+    display: none;
+}
+
+#formulario p {
+    padding: 0 1rem;
+}
+
+form {
+    max-width: 995px;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: #0456a5;
+    padding: 1rem;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+}
+
+form span {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input {
+    width: 330px;
+    height: 30px;
+}
+
+textarea {
+    height: 100px;
+    width: 330px;
+    margin-bottom: 1.5rem;
+    resize: none;
+}
+
+form input, form textarea {
+    outline: none;
+}
+
+.boton-formulario input {
+    max-width: 150px;
+    text-transform: uppercase;
+    background-color: #0456a5;
+    color: #ffffff;
+    font-weight: 700;
+    border: solid 2px white;
+}
+
+.contenedor-footer {
+    background-color: #f8ca58;
+}
+
+footer img {
+    max-width: 250px;
+    margin: 0 auto 1rem;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    color: #004281;
+    font-weight: 600;
+}
+
+.contenedor-footer {
+    background-color: #f8ca58;
+    padding: 1.5rem 0;
+}
+
+@media screen and (min-width: 600px){
+
+    nav ul li {
+        min-width: 200px;
+        display: inline-block;
+        margin: 0.5rem;
+        border: solid 3px white;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .imagen-tablet {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .introduccion-txt, .historia-txt, .info-personaje, .intro-clips {
+        padding: 0 1.5rem;
+    }
+
+    .imagenes-temporadas img:nth-child(2) {
+        display: block;
+    }
+
+    .imagenes-temporadas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .personaje
+    {
+        background-color: #335fa1;
+        border-radius: 10px;
+        margin: 1rem;
+        font-size: 0;
+    }
+
+    .actor-personaje {
+        border: solid 3px white;
+        border-radius: 10px;
+        margin-top: 0;
+    }
+
+    .info-personaje {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        padding: 1rem;
+    }
+    
+    .imagen-personaje {
+        display: inline-block;
+        width: calc(50% - 2rem);
+    }
+
+    .contenedor-episodios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .episodio, #episodios div:last-child
+    {
+        margin: 1rem;
+    }    
+
+    .episodio {
+        border-radius: 10px;
+    }
+
+    .episodio h3 {
+        min-height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .actor-personaje h3 
+    {
+        font-size: 2rem;
+    }
+
+    .video .txt-pc {
+        display: inline-block;
+    }
+
+    .video .txt-mobile {
+        display: none;
+    }
+
+    .video iframe, .video p {
+        display: inline-block;
+        width: calc(50% - 1rem);
+        vertical-align: middle;
+    }
+
+    .video p 
+    {
+        padding: 1.5rem;
+    }
+
+    .videos
+    {
+        text-align: center;
+    }
+
+    #formulario .foto-sorteo {
+        display: block;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    form input, form textarea {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:995px) {
+
+    .imagen-tablet {
+        display: none;
+    }
+
+    .imagen-pc {
+        display: block;
+        max-width: 500px;
+        float: left;
+        margin: 0 1.5rem;
+    }
+
+    #introduccion {
+        overflow: auto;
+    }
+
+    .contenedor-personajes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen-personaje {
+        width: calc(60% - 2rem);
+    }
+
+    .info-personaje {
+        width: 40%;
+    }
+
+    .historia-txt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .imagenes-temporadas img:nth-child(3) {
+        display: block;
+    }
+
+    .imagenes-temporadas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contenedor-episodios
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .video p
+    {
+        padding: 2.5rem;
+    }
+
+    iframe {
+        border: solid 5px white;
+    }
+
+    form {
+        border: solid 3px white;
+    }
+
+    form input, form textarea {
+        width: 900px;
+    }
+
+    .nombre-y-apellido, .email-y-tel {
+        display: inline-block;
+    }
+
+    .nombre-y-apellido input, .email-y-tel input {
+        width: 450px;
+    }
+
+}
